@@ -56,3 +56,21 @@ class WaitReleasesLock {
         notifyingThread.start();
     }
 }
+
+class WaitExample {
+    public static void main(String[] args) {
+        final Object lock = new Object();
+        Thread thread = new Thread(() -> {
+            synchronized (lock) {
+                try {
+                    System.out.println("线程准备等待 2 秒");
+                    lock.wait(2000); // 线程会等待2秒，或者直到其他线程调⽤lock.notify()/notifyAll()
+                    System.out.println("线程结束等待");
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        thread.start();
+    }
+}
