@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns = "http://maven.apache.org/POM/4.0.0" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0
+http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- 模型版本 -->
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 公司或者组织的唯一标志，并且配置时生成的路径也是由此生成， 如
+    com.companyname.project-group，maven 会将该项目打成的 jar 包放本地路径：
+    /com/companyname/project-group -->
+    <groupId>com.bfu.project</groupId>
+    <!-- 项目的唯一 ID，一个 groupId 下面可能多个项目，就是靠 artifactId 来
+    区分的 -->
+    <artifactId>hello</artifactId>
+    <!-- 版本号 -->
+    <version>1.0</version>
+
+    <dependencies>
+        <!-- 依赖设置 -->
+        <dependency>
+            <!-- 依赖组织名称 -->
+            <groupId>junit</groupId>
+            <!-- 依赖项目名称 -->
+            <artifactId>junit</artifactId>
+            <!-- 依赖版本名称 -->
+            <version>4.12</version>
+            <!-- 依赖范围：test 包下依赖该设置 -->
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>3.23.3</version> <!-- 推荐使用最新稳定版本 -->
+        </dependency>
+    </dependencies>
+
+</project>
