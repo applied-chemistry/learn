@@ -9,7 +9,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <groupId>com.bfu.project</groupId>
     <!-- 项目的唯一 ID，一个 groupId 下面可能多个项目，就是靠 artifactId 来
     区分的 -->
-    <artifactId>hello</artifactId>
+    <artifactId>learn</artifactId>
     <!-- 版本号 -->
     <version>1.0</version>
 
